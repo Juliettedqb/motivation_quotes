@@ -1,6 +1,8 @@
 console.log('script.js loaded');
 
-getQuotes();
+document.getElementById("buttonLoad").addEventListener("click", () =>{
+    getQuotes();
+})
 
 async function getQuotes() {
     const response = await fetch('/quotes');
